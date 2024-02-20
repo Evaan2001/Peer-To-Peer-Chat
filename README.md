@@ -17,11 +17,10 @@ Instructions / Getting Started
 </h2>
  
 <p  align="center">
-
-`./p2pchat start`
+1. First run `./p2pchat start`. This will initialize the network and display a server port number. Note it down!
+2. The basic syntax for joining as a client is `./p2pchat <username> [<peer> <port number>]`
 </p>
 
-`./p2pchat start`
 
 
 <h2 align="center"> 
