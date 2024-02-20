@@ -44,12 +44,12 @@ Files
 Here's what you'll find –
 </p>
 
-1. *p2pchat* – This is the final executable – the final compiled program – that you can conveniently run from your terminal. If you see permission errors, just recompile the code by running `make all`. This will create a new `p2pchat` executable and can run this.
+1. *p2pchat* – This is the final executable – the final compiled program – that you can conveniently run from your terminal. If you see permission errors, run `make clean` to remove the current `./p2pchat`, and recompile the code by running `make all`. This will create a new `p2pchat` executable and can run this.
 2. *p2pchat.c* – contains uses of all of the user interface functions such as connecting to servers, sending/receiving messages, etc.
 3. *ui.c* – The functions that build and update our user interface are declared in ui.c.
 4. *ui.h* – Header file for ui.c.
-5. *socket.h* – 
+5. *socket.h* – header file in POSIX standards that provides declarations for network socket operations (listening, opening, and closing)
 6. *message.c* – functions that facilitate message exchange between client and server by reading and sending messages with a prefixed length, ensuring agreement on message format.
 7. *message.h* – header for message.c
 8. *linked_list.c* – My implementation of a linked-list.
-9. *Makefile* – 
+9. *Makefile* – Makefile for this repository. 
