@@ -13,11 +13,11 @@ In the early days of networking, it was a common practice to connect users throu
 </div>
 
 <h2 align="center"> 
-What Information Can We Get?
+Instructions / Getting Started
 </h2>
  
 <p  align="center">
-Given a photo of a passport, my software can retrieve the following:
+<./p2pchat start>
 </p>
 
 
