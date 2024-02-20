@@ -19,14 +19,15 @@ Instructions / Getting Started
 
 ##### Things to note:
 
-
-
+1. This chat network only works across a LAN (Local Area Network) system; no internet capabilities yet! If you want to test this out and don't have a LAN set up, you can start multiple terminal windows in your device and each of those terminal windows can serve as 1 user (more on this below).
+2. The basic syntax for joining as a client is `./p2pchat <username> [<peer> <port number>]`. If your device is a member of a LAN system, the `peer` value would be your device's LAN ID/name. If you are starting multiple terminal windows in your non-LAN device, your `peer` will be `localhost`.
 
 ##### How to run:
 
-
-1. First run `./p2pchat start`. This will initialize the network and display a server port number. Note it down!
-2. The basic syntax for joining as a client is `./p2pchat <username> [<peer> <port number>]`. Suppose you want your username is Raj 
+1. First open a terminal window and run `./p2pchat start`. This will initialize the network and display a server port number. Note it down!
+2. Now open another terminal window.
+3. Suppose you want your username to be SharpCactus. You can join the network by running `./p2pchat SharpCactus localhost <port number>`, where `port number` is the server port number displayed in the first terminal number
+4. Subsequent users can also join the network from their own terminal windows with one caveat – their usernames have to be unique.
 
 
 <h2 align="center"> 
