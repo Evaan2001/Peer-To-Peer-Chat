@@ -39,25 +39,6 @@ network.
 
 ---- Question 3 ----
 
-One mechanism for tolerating failure is replication. If each client connected to two existing 
-peers instead of just one, would that help you tolerate any additional faults? What problems 
-could this change create for your implementation?
-
----- Response ----
-
-By connecting to two different peers, we can tolerate the fault of one of the peers disconnecting.
-The current peer-to-peer system only allows a peer to have a connection to another peer (although
-one peer can hold the connection of several other peers). Thus, if peer A is connected to peer B,
-where peer B is the one connected to the larger chat, if B disconnects then A also disconnects.
-If there are two connections, then even if B disconnects, A will still be connected to the overall
-system, allowing us to tolerate the fault of one disconnect.
-However, this problem will cause every connection to essentially double up, which will double the
-amount of resources required for peer to connect. This may cause problems such as insufficient
-memory and slowing down of the chat system.
-
-
----- Question 4 ----
-
 Describe one additional change you could make to the peer-to-peer chat system that would 
 allow it to tolerate faults. Describe how you would implement this change, and at least one 
 example of how it would allow you to tolerate a fault.
