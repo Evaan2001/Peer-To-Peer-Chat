@@ -20,14 +20,19 @@ Instructions / Getting Started
 ##### Things to note:
 
 1. This chat network only works on 1 device or across a LAN (Local Area Network) setup; no internet capabilities yet! If you want to test this out and don't have a LAN setup, you can start multiple terminal windows in your device and each of those terminal windows can serve as 1 user (more on this below).
-2. The basic syntax for joining as a client is `./p2pchat <username> <peer> <port number>`. If your device is a member of a LAN system, the `peer` value would be your device's LAN ID/name. If you are starting multiple terminal windows in 1 device, your `peer` will be `localhost`.
+2. Every user is a client and a network and each user's server is connected to each other user's network.
+3. Whenever any server is connected, we get a server port number. Because each user is a network, we will get a unique server port number whenever we create a user.
+4. The basic syntax for joining as a client is `./p2pchat <username> <peer> <port number>`. If your device is a member of a LAN system, the `peer` value would be your device's LAN ID/name. If you are starting multiple terminal windows in 1 device, your `peer` will be `localhost` and `<port number>` can be any of the server port numbers you got when creating the users.
 
 ##### How to run:
 
-1. First open a terminal window and run `./p2pchat start`. This will initialize the network and display a server port number. Note it down!
-2. Now open another terminal window.
-3. Suppose you want your username to be SharpCactus. You can join the network by running `./p2pchat SharpCactus localhost <port number>`, where `port number` is the server port number displayed in the first terminal number
-4. Subsequent users can also join the network from their own terminal windows with one caveat – their usernames have to be unique.
+1. First open a terminal window.
+2. Run `./p2pchat <username1>` and substitute username1 with whatever usernmae you want. This creates user-1's client and server (remember each user is a network client & server.)
+3. The UI changes and displays a server port number. Note it down!
+4. Now open another terminal window. We will create user-2 and connect it to user-1's existing network
+5. Suppose you want your new username to be SharpCactus. You can join user-1's network by running `./p2pchat SharpCactus localhost <port number>`, where `port number` is the server port number displayed in the first terminal number
+6. You can now begin chatting
+7. Subsequent users can also join the network from their own terminal windows by `./p2pchat new-username localhost <port number>` where <>
 
 
 <h2 align="center"> 
