@@ -9,7 +9,7 @@ Here's my implementation of a peer-to-peer (P2P) chat network – networks that
 
 <div align="center">
 
-In the early days of networking, it was a common practice to connect users through 1 central server. However, if that central server was compromised (say by cyber-security attacks) or if it needed to be temporarily paused (maybe for hardware maintenance/upgrades), the entire network would have to shut down. That's when P2P networks came where each client (user) serves as an independent server, thus eliminating the need for and minimizing the risks associated with just 1 central server
+In the early days of networking, it was a common practice to connect users through 1 central server. However, if that central server was compromised (say by cyber-security attacks) or if it needed to be temporarily paused (maybe for hardware maintenance/upgrades), the entire network would have to shut down. That's when P2P networks came where each client (user) serves as an independent server, thus eliminating the need for and minimizing the risks associated with just 1 central server. For some FAQs on the P2P network design, check out the [https://github.com/Evaan2001/Peer-To-Peer-Chat/blob/main/QUESTIONS.txt](Questions.txt) file in this repo.
 </div>
 
 <h2 align="center"> 
