@@ -1,0 +1,77 @@
+Once you have completed your implementation, review and respond to the questions below. 
+Each of your responses should be at least four sentences.
+
+----- Question 1 -----
+
+What kinds of faults can your peer-to-peer chat implementation tolerate? Faults may include 
+problems with machines or the network, as well as program crashes. Be specific about what 
+failure situations you could tolerate, and explain how the system can continue to work in 
+the face of these failures.
+
+---- Response ----
+
+One fault that our system can tolerate is the abortion of programs. If a peer suddenly exits
+the program without sending a quit message, it should not cause the other peers to be disturbed.
+Our system allows for the smooth transition between one peer crashing and the rest not being
+affected (we print a message saying that the user who aborted can't send messages anymore). 
+It would simply remove the disconnected peer and keep the other connections.
+
+Another fault it holds up with is if several people want to chat with one another, there is the
+presence of several peers to connect to. Instead of having one server that has to hold the
+information for several clients, each peer can be its own server providing a connecting point for
+other connections.
+
+
+---- Question 2 ----
+
+What faults will cause your peer-to-peer chat to fail, or to operate in some diminished capacity?
+ Again, be specific about the situations that will result in failure.
+
+---- Response ----
+
+One fault that will cause our peer-to-peer chat to not work optimally is the connection of too many peers.
+Although we say in question 1 that one of the faults we can tolerate is if we have several
+people who want to talk at once, it does not change the fact that if several peers connect to
+one peer, the situation of the client-server does not change. Thus, one peer would have to bear
+the burden of all the other peers. This will cause problems with speed and memory as it will
+become extremely slow to send messages and also no guarantee that all peers can be added to the
+network.
+
+
+---- Question 3 ----
+
+One mechanism for tolerating failure is replication. If each client connected to two existing 
+peers instead of just one, would that help you tolerate any additional faults? What problems 
+could this change create for your implementation?
+
+---- Response ----
+
+By connecting to two different peers, we can tolerate the fault of one of the peers disconnecting.
+The current peer-to-peer system only allows a peer to have a connection to another peer (although
+one peer can hold the connection of several other peers). Thus, if peer A is connected to peer B,
+where peer B is the one connected to the larger chat, if B disconnects then A also disconnects.
+If there are two connections, then even if B disconnects, A will still be connected to the overall
+system, allowing us to tolerate the fault of one disconnect.
+However, this problem will cause every connection to essentially double up, which will double the
+amount of resources required for peer to connect. This may cause problems such as insufficient
+memory and slowing down of the chat system.
+
+
+---- Question 4 ----
+
+Describe one additional change you could make to the peer-to-peer chat system that would 
+allow it to tolerate faults. Describe how you would implement this change, and at least one 
+example of how it would allow you to tolerate a fault.
+
+---- Response ----
+
+One way we could allow for the peer-to-peer chat system to tolerate faults it to allow the
+connections to fix themselves. In other words, if one peer, A, is to disconnect, allow the 
+peers connected to A to connect to the larger system that A was originally connected to.
+That why, even if A is removed, the other peers can still chat to everyone in the whole
+system.
+I would implement this change by using something similar to an AVL tree, where if one node
+is removed, it would fix itself to create new connections and make sure the other nodes are
+all still connected. For this to happen, we have to allow the peers to disconnect and
+reconnect in the program which would require us to possibly change the current implementation
+of socket.h.
