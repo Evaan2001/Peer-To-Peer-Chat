@@ -38,7 +38,7 @@ Files
 Here's what you'll find –
 </p>
 
-1. *p2pchat* – This is the final executable – the final compiled program – that you can conveniently run from your terminal. If you want to make changes and compile everything by yourself, I've also uploaded the source code files, which are described below.
+1. *p2pchat* – This is the final executable – the final compiled program – that you can conveniently run from your terminal. If you want to make changes and compile everything by yourself, I've also uploaded the source code files that are described below.
 2. *p2pchat.c* – 
 3. *ui.c* – 
 4. *ui.h* –
