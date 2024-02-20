@@ -15,12 +15,20 @@ In the early days of networking, it was a common practice to connect users throu
 <h2 align="center"> 
 Instructions / Getting Started
 </h2>
- 
+
 <p  align="center">
-1. First run `./p2pchat start`. This will initialize the network and display a server port number. Note it down!
-2. The basic syntax for joining as a client is `./p2pchat <username> [<peer> <port number>]`
+
+Things to note:
 </p>
 
+
+<p  align="center">
+
+How to run:
+</p>
+
+1. First run `./p2pchat start`. This will initialize the network and display a server port number. Note it down!
+2. The basic syntax for joining as a client is `./p2pchat <username> [<peer> <port number>]`. Suppose you want your username is Raj 
 
 
 <h2 align="center"> 
