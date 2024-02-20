@@ -33,6 +33,7 @@ Instructions / Getting Started
 5. Suppose you want your new username to be SharpCactus. You can join user-1's network by running `./p2pchat SharpCactus localhost <port number>`, where `port number` is the server port number displayed in the first terminal number
 6. You can now begin chatting
 7. Subsequent users can also join the network from their own terminal windows by `./p2pchat new-username localhost <port number>` where <>
+8. To exit, type `:quit` or `:q`. 
 
 
 <h2 align="center"> 
@@ -43,12 +44,12 @@ Files
 Here's what you'll find –
 </p>
 
-1. *p2pchat* – This is the final executable – the final compiled program – that you can conveniently run from your terminal. If you want to make changes and compile everything by yourself, I've also uploaded the source code files that are described below.
-2. *p2pchat.c* – 
-3. *ui.c* – 
-4. *ui.h* –
+1. *p2pchat* – This is the final executable – the final compiled program – that you can conveniently run from your terminal. If you see permission errors, just recompile the code by running `make all`. This will create a new `p2pchat` executable and can run this.
+2. *p2pchat.c* – contains uses of all of the user interface functions such as connecting to servers, sending/receiving messages, etc.
+3. *ui.c* – The functions that build and update our user interface are declared in ui.c.
+4. *ui.h* – Header file for ui.c.
 5. *socket.h* – 
-6. *message.c* – 
-7. *message.h* – 
-8. *linked_list.c* –
+6. *message.c* – functions that facilitate message exchange between client and server by reading and sending messages with a prefixed length, ensuring agreement on message format.
+7. *message.h* – header for message.c
+8. *linked_list.c* – My implementation of a linked-list.
 9. *Makefile* – 
