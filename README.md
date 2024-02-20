@@ -4,12 +4,12 @@ width = "900"/>
 
 </p>
 <h3 align="center">
-Here's a P2P Chat Network where each client (user) serves as an independent server, thus eliminating the need for and minimizing the risks associated with 1 central server
+Here's my implementation of a peer-to-peer (P2P) chat network – networks that don't require a central server. Try it out!
 </h3>
 
 <div align="center">
 
-I was freelancing for a security company in Austin, TX, and was tasked to write code for an embedded device to extract someone's information from a photo of their passport. I took that software and created a web-app using [Streamlit](https://streamlit.io) so that others can also use my work. Click here to [use my app](https://revisedocr.streamlit.app/)!
+In the early days of networking, it was a common practice to connect users through 1 central server. However, if that central server was compromised (say by cyber-security attacks) or if it needed to be temporarily paused (maybe for hardware maintenance/upgrades), the entire network would have to shut down. That's when P2P networks came where each client (user) serves as an independent server, thus eliminating the need for and minimizing the risks associated with 1 central server
 </div>
 
 <h2 align="center"> 
