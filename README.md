@@ -17,8 +17,10 @@ Instructions / Getting Started
 </h2>
  
 <p  align="center">
-<./p2pchat start>
+
 </p>
+
+<./p2pchat start>
 
 
 <h2 align="center"> 
