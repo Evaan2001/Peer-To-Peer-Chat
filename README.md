@@ -1,5 +1,5 @@
 <p  align="center">
-<img  src="https://github.com/Evaan2001/Images_For_ReadMe/blob/main/P2PChat.png"
+<img  src="https://github.com/Evaan2001/Images_For_ReadMe/blob/main/P2P-Chat.png"
 width = "900"/>
 
 </p>
