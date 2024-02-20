@@ -20,7 +20,7 @@ Instructions / Getting Started
 ##### Things to note:
 
 1. This chat network only works on 1 device or across a LAN (Local Area Network) setup; no internet capabilities yet! If you want to test this out and don't have a LAN setup, you can start multiple terminal windows in your device and each of those terminal windows can serve as 1 user (more on this below).
-2. Every user is a client and a network and each user's server is connected to each other user's network.
+2. Every user is a client and a network, and each user's server is connected to each other user's network.
 3. Whenever any server is connected, we get a server port number. Because each user is a network, we will get a unique server port number whenever we create a user.
 4. The basic syntax for joining as a client is `./p2pchat <username> <peer> <port number>`. If your device is a member of a LAN system, the `peer` value would be your device's LAN ID/name. If you are starting multiple terminal windows in 1 device, your `peer` will be `localhost` and `<port number>` can be any of the server port numbers you got when creating the users.
 
