@@ -38,11 +38,12 @@ Files
 Here's what you'll find –
 </p>
 
-1. *p2pchat* – 
+1. *p2pchat* – This is the final executable – the final compiled program – that I've uploaded so that you can conveniently run from your terminal. If you want to make changes and compile everything by yourself, I've also uploaded the source code files, which are described below.
 2. *p2pchat.c* – 
 3. *ui.c* – 
 4. *ui.h* –
 5. *socket.h* – 
 6. *message.c* – 
 7. *message.h* – 
-8. *linked_list.c* – 
+8. *linked_list.c* –
+9. *Makefile* – 
